@@ -8,6 +8,10 @@ terraform {
     }
 }
 
+provider "aws" {
+    region = "us-east-1"
+}
+
 module "aws_static_site" {
     source  = "dvargas92495/static-site/aws"
     version = "1.2.0"
