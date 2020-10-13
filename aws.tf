@@ -15,7 +15,6 @@ provider "aws" {
 module "aws_static_site" {
     source  = "dvargas92495/static-site/aws"
     version = "1.2.0"
-
     domain = "static-site-demo.davidvargas.me"
     secret = "secret-key"
     tags = {
